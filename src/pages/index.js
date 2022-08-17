@@ -46,7 +46,7 @@ const Index = () => {
     } else if (!todo.id) {
       addTodoHandler(todo);
     } else {
-      const updateTodoById = todos.map((list) => {
+      const updateToDo = todos.map((list) => {
         if (list.id === todo.id) {
           return {
             ...list,
@@ -57,8 +57,8 @@ const Index = () => {
           return todo;
         }
       });
-      setTodos(updateTodoById);
-      localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(updateTodoById));
+      setTodos(updateToDo);
+      localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(updateToDo));
     }
 
     setTodo({
