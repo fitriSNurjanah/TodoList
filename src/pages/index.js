@@ -54,7 +54,7 @@ const Index = () => {
             desc: todo.desc,
           };
         } else {
-          return todo;
+          return list;
         }
       });
       setTodos(updateToDo);
